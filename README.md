@@ -1,6 +1,11 @@
 ### Neural Inverse Operators for solving PDE Inverse Problems
 This repository is the official implementation of the paper [**Neural Inverse Operators for solving PDE Inverse Problems**](https://openreview.net/pdf?id=S4fEjmWg4X)
 
+<br/><br/>
+
+<img src="Images/NIORB.png" width="800" >
+
+<br/><br/>
 
 #### Requirements
 The code is based on python 3 (version 3.7) and the packages required can be installed with
