@@ -71,7 +71,7 @@ tensorboard --logdir=NameOfTheModelSelectionFolder
 If a SLURM remote server is available set `sbatch=True` and `cluster="true"` in the script.
 
 #### Pretrained Models
-The models trained and used to compute the errors in Table 1 can be downloaded (13GB) by running:
+The models trained and used to compute the errors in Table 1 can be downloaded (9GB) by running:
 ```
 python3 download_models.py
 ```

@@ -183,33 +183,33 @@ if not os.path.isdir(folder):
     print("Using FCNIO")
     if problem == "sine" or problem == "helm" or problem == "step":
         model = NIOHelmPermInvAbl(input_dimensions_branch=inp_dim_branch,
-                                     input_dimensions_trunk=grid.shape[2],
-                                     network_properties_branch=branch_architecture_,
-                                     network_properties_trunk=trunk_architecture_,
-                                     fno_architecture=fno_architecture_,
-                                     device=device,
-                                     retrain_seed=retrain_seed,
-                                     fno_input_dimension=fno_input_dimension)
+                                  input_dimensions_trunk=grid.shape[2],
+                                  network_properties_branch=branch_architecture_,
+                                  network_properties_trunk=trunk_architecture_,
+                                  fno_architecture=fno_architecture_,
+                                  device=device,
+                                  retrain_seed=retrain_seed,
+                                  fno_input_dimension=fno_input_dimension)
 
     elif problem == "eit":
         model = NIOHeartPermAbl(input_dimensions_branch=inp_dim_branch,
-                                   input_dimensions_trunk=2,
-                                   network_properties_branch=branch_architecture_,
-                                   network_properties_trunk=trunk_architecture_,
-                                   fno_architecture=fno_architecture_,
-                                   device=device,
-                                   retrain_seed=retrain_seed,
-                                   fno_input_dimension=fno_input_dimension)
+                                input_dimensions_trunk=2,
+                                network_properties_branch=branch_architecture_,
+                                network_properties_trunk=trunk_architecture_,
+                                fno_architecture=fno_architecture_,
+                                device=device,
+                                retrain_seed=retrain_seed,
+                                fno_input_dimension=fno_input_dimension)
 
     elif problem == "rad":
         model = NIORadPermAbl(input_dimensions_branch=inp_dim_branch,
-                                 input_dimensions_trunk=1,
-                                 network_properties_branch=branch_architecture_,
-                                 network_properties_trunk=trunk_architecture_,
-                                 fno_architecture=fno_architecture_,
-                                 device=device,
-                                 retrain_seed=retrain_seed,
-                                 fno_input_dimension=fno_input_dimension)
+                              input_dimensions_trunk=1,
+                              network_properties_branch=branch_architecture_,
+                              network_properties_trunk=trunk_architecture_,
+                              fno_architecture=fno_architecture_,
+                              device=device,
+                              retrain_seed=retrain_seed,
+                              fno_input_dimension=fno_input_dimension)
     start_epoch = 0
     best_model_testing_error = 100
     best_model = None
@@ -234,31 +234,31 @@ else:
         print("Found no model. Creating a new one")
         if problem == "sine" or problem == "helm" or problem == "step":
             model = NIOHelmPermInvAbl(input_dimensions_branch=inp_dim_branch,
-                                         input_dimensions_trunk=grid.shape[2],
-                                         network_properties_branch=branch_architecture_,
-                                         network_properties_trunk=trunk_architecture_,
-                                         fno_architecture=fno_architecture_,
-                                         device=device,
-                                         retrain_seed=retrain_seed,
-                                         fno_input_dimension=fno_input_dimension)
+                                      input_dimensions_trunk=grid.shape[2],
+                                      network_properties_branch=branch_architecture_,
+                                      network_properties_trunk=trunk_architecture_,
+                                      fno_architecture=fno_architecture_,
+                                      device=device,
+                                      retrain_seed=retrain_seed,
+                                      fno_input_dimension=fno_input_dimension)
         elif problem == "eit":
             model = NIOHeartPermAbl(input_dimensions_branch=inp_dim_branch,
-                                       input_dimensions_trunk=2,
-                                       network_properties_branch=branch_architecture_,
-                                       network_properties_trunk=trunk_architecture_,
-                                       fno_architecture=fno_architecture_,
-                                       device=device,
-                                       retrain_seed=retrain_seed,
-                                       fno_input_dimension=fno_input_dimension)
+                                    input_dimensions_trunk=2,
+                                    network_properties_branch=branch_architecture_,
+                                    network_properties_trunk=trunk_architecture_,
+                                    fno_architecture=fno_architecture_,
+                                    device=device,
+                                    retrain_seed=retrain_seed,
+                                    fno_input_dimension=fno_input_dimension)
         elif problem == "rad":
             model = NIORadPermAbl(input_dimensions_branch=inp_dim_branch,
-                                     input_dimensions_trunk=1,
-                                     network_properties_branch=branch_architecture_,
-                                     network_properties_trunk=trunk_architecture_,
-                                     fno_architecture=fno_architecture_,
-                                     device=device,
-                                     retrain_seed=retrain_seed,
-                                     fno_input_dimension=fno_input_dimension)
+                                  input_dimensions_trunk=1,
+                                  network_properties_branch=branch_architecture_,
+                                  network_properties_trunk=trunk_architecture_,
+                                  fno_architecture=fno_architecture_,
+                                  device=device,
+                                  retrain_seed=retrain_seed,
+                                  fno_input_dimension=fno_input_dimension)
 
         start_epoch = 0
         best_model_testing_error = 100
